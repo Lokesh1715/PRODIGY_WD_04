@@ -1,0 +1,98 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+header.scrolled {
+    background-color: #555;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero, .about, .projects, .contact {
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    color: white;
+    padding: 50px 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.hero img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+.hero h1, .about h1, .projects h2, .contact h2 {
+    margin: 20px 0;
+    font-size: 2.5em;
+}
+
+.hero p, .about p, .projects ol, .contact p {
+    font-size: 1.2em;
+}
+
+.projects ol {
+    list-style: none;
+    padding: 0;
+}
+
+.projects ol li {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.projects ol li:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
